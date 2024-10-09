@@ -16,35 +16,48 @@ Most popular mocking framework for Java
 
 
 ## Current version is 5.x
-Still on Mockito 1.x? See [what's new](https://github.com/mockito/mockito/wiki/What%27s-new-in-Mockito-2) in Mockito 2!
-[Mockito 3](https://github.com/mockito/mockito/releases/tag/v3.0.0) does not introduce any breaking API changes, but now requires Java 8 over Java 6 for Mockito 2.
-[Mockito 4](https://github.com/mockito/mockito/releases/tag/v4.0.0) removes deprecated API.
-[Mockito 5](https://github.com/mockito/mockito/releases/tag/v5.0.0) switches the default mockmaker to mockito-inline, and now requires Java 11.
-Only one major version is supported at a time, and changes are not backported to older versions.
+* [what's new | Mockito 2](https://github.com/mockito/mockito/wiki/What%27s-new-in-Mockito-2)
+  * requirements
+    * Java v6+
+* [Mockito 3](https://github.com/mockito/mockito/releases/tag/v3.0.0)
+  * NOT breaking API changes
+  * requirements
+    * Java v8+
+* [Mockito 4](https://github.com/mockito/mockito/releases/tag/v4.0.0)
+  * removes deprecated API
+* [Mockito 5](https://github.com/mockito/mockito/releases/tag/v5.0.0)
+  * default `mockmaker` -- is replaced by -- `mockito-inline`
+  * changes are NOT backward compatible
+  * requirements
+    * Java v11+
 
 ## Mockito for enterprise
 
-Available as part of the [Tidelift](https://tidelift.com/subscription/pkg/maven-org-mockito-mockito-core) Subscription.
-
-The maintainers of org.mockito:mockito-core and thousands of other packages are working with Tidelift to deliver
-commercial support and maintenance for the open source dependencies you use to build your applications. Save time,
-reduce risk, and improve code health, while paying the maintainers of the exact dependencies you use.
-[Learn more.](https://tidelift.com/subscription/pkg/maven-org-mockito-mockito-core?utm_source=maven-org-mockito-mockito-core&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
+* [Tidelift](https://tidelift.com/subscription/pkg/maven-org-mockito-mockito-core) Subscription
+* run by 
+  * maintainers of `org.mockito:mockito-core`
+* benefits
+  * Save time
+  * reduce risk
+  * improve code health
+  * pay on demand the exact dependencies / you use
+* [Learn more.](https://tidelift.com/subscription/pkg/maven-org-mockito-mockito-core?utm_source=maven-org-mockito-mockito-core&utm_medium=referral&utm_campaign=enterprise&utm_term=repo)
 
 ## Development
 
-Mockito publishes every change as a `-SNAPSHOT` version to a public Sonatype repository. Roughly once a month, we
-publish a new minor or patch version to Maven Central. For release automation we use Shipkit
-library (http://shipkit.org), Gradle Nexus [Publish Plugin](https://github.com/gradle-nexus/publish-plugin).
-Fully automated releases are awesome, and you should do that for your libraries, too!
-See the [latest release notes](https://github.com/mockito/mockito/releases/)
-and [latest documentation](https://javadoc.io/page/org.mockito/mockito-core/latest/org/mockito/Mockito.html). Docs in
-javadoc.io are available 24h after release. Read also
-about [semantic versioning in Mockito](https://github.com/mockito/mockito/wiki/Semantic-Versioning).
-
-Older 1.x and 2.x releases are available in
-[Central Repository](https://search.maven.org/artifact/org.mockito/mockito-core/1.10.19/jar)
-and [javadoc.io](https://javadoc.io/doc/org.mockito/mockito-core/1.10.19/org/mockito/Mockito.html) (documentation).
+* `-SNAPSHOT` version
+  * published | public Sonatype repository
+* new minor or patch version 
+  * published / month | Maven Central
+* [Shipkit](http://shipkit.org) & [Gradle Nexus Publish Plugin](https://github.com/gradle-nexus/publish-plugin)
+  * uses
+    * release automation
+* [latest release notes](https://github.com/mockito/mockito/releases/)
+* [latest documentation](https://javadoc.io/page/org.mockito/mockito-core/latest/org/mockito/Mockito.html)
+* [semantic versioning in Mockito](https://github.com/mockito/mockito/wiki/Semantic-Versioning)
+* Older 1.x and 2.x 
+  * releases are available | [Central Repository](https://search.maven.org/artifact/org.mockito/mockito-core/1.10.19/jar) &
+  * [javadoc.io documentation](https://javadoc.io/doc/org.mockito/mockito-core/1.10.19/org/mockito/Mockito.html)
 
 ## More information
 
@@ -62,16 +75,13 @@ Enjoy Mockito!
 
 ## How to develop Mockito?
 
-To build locally:
-
-     ./gradlew build
-
-To develop in IntelliJ IDEA you can use built-in Gradle import wizard in IDEA. Alternatively generate the importable
-IDEA metadata files using:
-
-     ./gradlew idea
-
-Then, _open_ the generated *.ipr file in IDEA.
+* `./gradlew build`
+  * build locally
+* if you are using IntelliJ IDEA -> you can 
+  * use built-in Gradle import wizard | IDEA
+  * `./gradlew idea`
+    * -- generate the -- importable IDEA metadata files
+    * open the generated "*.ipr" | IDEA
 
 ## How to release new version?
 

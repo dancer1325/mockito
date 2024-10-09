@@ -69,6 +69,13 @@ public class Main {
         System.out.println(spy.get(0));
         System.out.println(spy.get(1));
 
+        // 5. spy creates a copy of the real instance, and real instance does NOT have an entry
+        try {
+            System.out.println(list.get(0));
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("list.get(0) threw IndexOutOfBoundsException");
+        }
+
         //size() method was stubbed -> NOT taking real ones
         System.out.println(spy.size());
 
